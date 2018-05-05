@@ -1,0 +1,51 @@
+{{define "layout"}}<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    
+    <link href="css/navbar-top.css" rel="stylesheet">
+    <link href="css/sticky-footer.css" rel="stylesheet">
+    {{template "styles"}}
+    <title>{{template "title"}}</title>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="/">moghoul</a>
+        <ul class="navbar-nav mr-auto justify-content-end container-fluid">
+            <li class="nav-item">
+                <a class="nav-link" href="/todo">Resume</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled">Blog</a>
+            </li>
+        </ul>
+    </nav>
+    {{template "body"}}
+    <footer class="footer">
+        <div class="container">
+            <center>
+                <span class="text-muted">&copy; Molly Gouletas 2018</span>
+            </center>
+        </div>
+    </footer>
+    
+    <script src="js/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="js/popper.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+    {{template "scripts"}}
+</body>
+
+</html>
+{{end}}
