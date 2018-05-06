@@ -7,8 +7,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <link rel="icon" href="images/moghoul-logo-transparent.png">
+
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
-    
     <link href="css/navbar-top.css" rel="stylesheet">
     <link href="css/sticky-footer.css" rel="stylesheet">
     {{template "styles"}}
@@ -18,11 +19,14 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-4">
-        <a class="navbar-brand" href="/">moghoul</a>
-        <ul class="navbar-nav mr-auto justify-content-end container-fluid">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark mb-4">
+        <a class="navbar-brand" href="/">
+            <img src="images/moghoul-logo-transparent-large.png" width="30%" height="30%"/>
+        </a>
+
+        <ul class="navbar-nav justify-content-end container">
             <li class="nav-item">
-                <a class="nav-link" href="/todo">Resume</a>
+                <a class="nav-link" href="#">Resume</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link disabled">Projects</a>
@@ -31,6 +35,7 @@
                 <a class="nav-link disabled">Blog</a>
             </li>
         </ul>
+
     </nav>
     {{template "body"}}
     <footer class="footer">
@@ -40,10 +45,10 @@
             </center>
         </div>
     </footer>
-    
+
     <script src="js/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="js/popper.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
     {{template "scripts"}}
 </body>
 
