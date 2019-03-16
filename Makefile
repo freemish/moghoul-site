@@ -1,0 +1,2 @@
+deps:
+	dep ensure
